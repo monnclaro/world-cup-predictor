@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="NLW Copa" src=".web/source/assets/logo.svg" />
+  <img alt="NLW Copa" src="./web/src/assets/logo.svg" />
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
 
 ## NLW COPA
 
-<img alt="NLW Copa" src=".web/public/NLWCopa.png" />
+<img alt="NLW Copa" src="./web/public/NLWCopa.png" />
 
 ## Technologies
 
@@ -20,3 +20,4 @@
 - [Expo](https://expo.dev/)
 - [Fastify](https://www.fastify.io/)
 - [Prisma](https://www.prisma.io/)
+- [Tailwind](https://tailwindcss.com/)
