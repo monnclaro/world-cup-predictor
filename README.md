@@ -12,10 +12,17 @@
 
 <p>Technologies that I used to develop this application:<p>
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [React](https://reactjs.org/)
-- [React Native](https://reactnative.dev/)
+
+
+- [Zod](https://github.com/colinhacks/zod)
 - [Expo](https://expo.dev/)
-- [Fastify](https://www.fastify.io/)
+- [React](https://reactjs.org/)
+- [Axios](https://axios-http.com/)
 - [Prisma](https://www.prisma.io/)
+- [Next.js](https://nextjs.org/)
+- [Fastify](https://www.fastify.io/)
 - [Tailwind](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Native](https://reactnative.dev/)
+
+
