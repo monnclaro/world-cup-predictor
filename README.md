@@ -25,8 +25,14 @@
 
 ### Run Local
 
-Run the following command in both directories to start the application.
+Run the following command in both server and web directories to start the application.
 
 ```bash
 $ npm run start
+```
+
+Run the following command in the mobile directory to start the mobile application.
+
+```bash
+$ npx expo start
 ```
