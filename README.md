@@ -1,10 +1,10 @@
-<div align="center">
+<p align="center">
   <img alt="NLW Copa" src="./web/src/assets/logo.svg" />
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <img src="https://img.shields.io/static/v1?label=NLW&message=10&color=F7DD43&labelColor=202024" alt="NLW 10 - Copa" />  
-</div>
+</p>
 
 <img alt="NLW Copa" src="./web/public/NLWCopa.png" />
 
