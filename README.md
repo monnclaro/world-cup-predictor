@@ -16,7 +16,7 @@ Run the following command in both directories to start the application.
 $ npm run start
 ```
 
-## Technologies
+### Technologies
 
 <p>Technologies that I used to develop this application:<p>
 
