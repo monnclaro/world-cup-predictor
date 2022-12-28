@@ -8,14 +8,6 @@
 
 <img alt="NLW Copa" src="./web/public/NLWCopa.png" />
 
-### Run Local
-
-Run the following command in both directories to start the application.
-
-```bash
-$ npm run start
-```
-
 ### Technologies
 
 <p>Technologies that I used to develop this application:<p>
@@ -30,3 +22,11 @@ $ npm run start
 - [Tailwind](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React Native](https://reactnative.dev/)
+
+### Run Local
+
+Run the following command in both directories to start the application.
+
+```bash
+$ npm run start
+```
