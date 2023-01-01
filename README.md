@@ -6,7 +6,8 @@
   <img src="https://img.shields.io/static/v1?label=NLW&message=10&color=F7DD43&labelColor=202024" alt="NLW 10 - Copa" />  
 </p>
 
-<img alt="NLW Copa" src="./web/public/NLWCopa.png" />
+<img alt="NLW Copa" src="./web/public/Web.png" />
+<img alt="NLW Copa" src="./web/public/Mobile.png" />
 
 ### Technologies
 
