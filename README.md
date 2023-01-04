@@ -7,7 +7,7 @@
 </p>
 
 <img alt="NLW Copa" src="./web/public/Web.PNG" />
-<img alt="NLW Copa" src="./web/public/Mobile.png" />
+<img alt="NLW Copa" src="./web/public/MobileThumbnail.png" />
 
 ## Technologies
 
