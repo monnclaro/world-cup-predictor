@@ -1,4 +1,6 @@
+import Head from "next/head";
 import Image from "next/image";
+
 import { api } from "../lib/axios";
 import { FormEvent, useState } from "react";
 
@@ -38,70 +40,78 @@ export default function Home(props: HomeProps) {
   }
 
   return (
-    <div className="max-w-[1124px] h-screen mx-auto grid grid-cols-2 gap-28 items-center">
-      <main>
-        <Image src={logoImg} alt="NLW Copa" />
-        <h1 className="mt-14 text-white text-5xl font-bold leading-tight">
-          Crie seu próprio bolão da copa e compartilhe entre amigos
-        </h1>
+    <>
+      <Head>
+        <title>NLW Copa</title>
+        <meta name="description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="mx-auto grid h-screen max-w-[1124px] grid-cols-2 items-center gap-28">
+        <main>
+          <Image src={logoImg} alt="NLW Copa" />
+          <h1 className="mt-14 text-5xl font-bold leading-tight text-white">
+            Crie seu próprio bolão da copa e compartilhe entre amigos
+          </h1>
 
-        <div className="mt-10 flex items-center gap-2">
-          <Image src={userAvatarExample} alt="Avatar dos usuários" />
-          <strong className="text-gray-100 text-xl">
-            <span className="text-ignite-500">+{props.userCount}</span> pessoas
-            já estão usando
-          </strong>
-        </div>
-
-        <form onSubmit={createPool} className="mt-10 flex gap-2">
-          <input
-            type="text"
-            required
-            placeholder="Qual o nome do seu bolão?"
-            className="flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-small text-gray-100"
-            onChange={(event) => setPoolTitle(event.target.value)}
-            value={poolTitle}
-          />
-          <button
-            type="submit"
-            className="px-6 py-4 rounded bg-yellow-500 text-gray-900 text-small font-bold uppercase hover:bg-yellow-700"
-          >
-            Criar meu bolão
-          </button>
-        </form>
-
-        <p className="mt-4 text-sm text-gray-300 leading-relaxed">
-          Após criar seu bolão, você receberá um código único que poderá ser
-          usado para convidar outras pessoas 🚀
-        </p>
-
-        <div className="mt-10 pt-10 border-t border-gray-600 flex justify-between items-center text-gray-100">
-          <div className="flex items-center gap-6">
-            <Image src={iconCheckImg} alt="" />
-            <div className="flex flex-col">
-              <span className="font-bold text-xl">+{props.poolCount}</span>
-              <span>Bolões criados</span>
-            </div>
+          <div className="mt-10 flex items-center gap-2">
+            <Image src={userAvatarExample} alt="Avatar dos usuários" />
+            <strong className="text-xl text-gray-100">
+              <span className="text-ignite-500">+{props.userCount}</span>{" "}
+              pessoas já estão usando
+            </strong>
           </div>
 
-          <div className="w-px h-14 bg-gray-600" />
+          <form onSubmit={createPool} className="mt-10 flex gap-2">
+            <input
+              type="text"
+              required
+              placeholder="Qual o nome do seu bolão?"
+              className="text-small flex-1 rounded border border-gray-600 bg-gray-800 px-6 py-4 text-gray-100"
+              onChange={(event) => setPoolTitle(event.target.value)}
+              value={poolTitle}
+            />
+            <button
+              type="submit"
+              className="text-small rounded bg-yellow-500 px-6 py-4 font-bold uppercase text-gray-900 hover:bg-yellow-700"
+            >
+              Criar meu bolão
+            </button>
+          </form>
 
-          <div className="flex items-center gap-6">
-            <Image src={iconCheckImg} alt="" />
-            <div className="flex flex-col">
-              <span className="font-bold text-xl">+{props.guessCount}</span>
-              <span>Palpites enviados</span>
+          <p className="mt-4 text-sm leading-relaxed text-gray-300">
+            Após criar seu bolão, você receberá um código único que poderá ser
+            usado para convidar outras pessoas 🚀
+          </p>
+
+          <div className="mt-10 flex items-center justify-between border-t border-gray-600 pt-10 text-gray-100">
+            <div className="flex items-center gap-6">
+              <Image src={iconCheckImg} alt="" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold">+{props.poolCount}</span>
+                <span>Bolões criados</span>
+              </div>
+            </div>
+
+            <div className="h-14 w-px bg-gray-600" />
+
+            <div className="flex items-center gap-6">
+              <Image src={iconCheckImg} alt="" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold">+{props.guessCount}</span>
+                <span>Palpites enviados</span>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <Image
-        src={appPreviewingImg}
-        alt="Dois celulares exibindo a prévia da aplicação"
-        quality={100}
-      />
-    </div>
+        <Image
+          src={appPreviewingImg}
+          alt="Dois celulares exibindo a prévia da aplicação"
+          quality={100}
+        />
+      </div>
+    </>
   );
 }
 
