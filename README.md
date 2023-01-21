@@ -29,7 +29,7 @@ Technologies that I used to develop this application:
 Run the following command in both server and web directories to start the application.
 
 ```bash
-$ npm run start
+$ npm run dev
 ```
 
 Run the following command in the mobile directory to start the mobile application.
